@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "react",
+        "allowJs": true,
+        "sourceMap": true,
+        "inlineSources": true,
+        "types": [
+            "node"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "outDir": "build",
+        "watch": true,
+        "rootDir": "src",
+    }, 
+}

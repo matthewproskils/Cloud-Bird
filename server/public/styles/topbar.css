@@ -1,0 +1,91 @@
+:root{
+    --color-1: #505557;
+    --color-2: #0f4c75;
+    --color-3: #3282b8;
+    --color-4: #bbe1fa;
+}
+
+cloud-bird-app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+cloud-bird-topbar{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    border-bottom: var(--color-1) solid 0.5vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f5f5;
+}
+
+cloud-bird-topbar > #topbar-header > a{
+    margin-left: 2vw;
+    text-decoration: none;
+    color: var(--color-1);
+    font-size: 2.7vw;
+    position: relative;
+}
+
+cloud-bird-topbar > #topbar-header > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5vh;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-1);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+cloud-bird-topbar > #topbar-header > a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+cloud-bird-topbar > #icon-3 a{
+    margin-right: 2vw;    
+}
+
+cloud-bird-topbar > .topbar-icon > a{
+    text-decoration: none;
+    color: var(--color-1);
+    font-size: 2vw;
+    position: relative;
+    vertical-align: bottom;
+    display: inline;
+    width: 10vw;
+    margin-left: 1vw;
+}
+
+cloud-bird-topbar > .topbar-icon > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5vh;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-1);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+cloud-bird-topbar > .topbar-icon > a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+cloud-bird-topbar > #spacer {
+    flex-grow: 0.6;
+}
+
+cloud-bird-topbar > .topbar-icon > i {
+    font-size: 2vw;
+    color: var(--color-1)
+}

@@ -1,0 +1,17 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --color-1: #505557;
+    --color-2: #0f4c75;
+    --color-3: #3282b8;
+    --color-4: #bbe1fa;
+}
+    
+*{
+    font-family: Roboto;
+}
